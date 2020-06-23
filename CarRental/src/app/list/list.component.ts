@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
+
   cars = [
     {
     brand: "Audi",
@@ -34,7 +35,7 @@ export class ListComponent implements OnInit {
 ]
 
   constructor() { 
-  
+
   }
 
   ngOnInit(): void {

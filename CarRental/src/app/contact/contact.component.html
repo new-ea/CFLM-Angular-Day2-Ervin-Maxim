@@ -1,0 +1,44 @@
+<div class="container">
+    <form [formGroup]="customer" (ngSubmit)="onSubmit()">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="firstName">First Name:</label>
+            <input formControlName="firstName" type="text" class="form-control" id="firstName">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="lastName">Last Name:</label>
+            <input formControlName="lastName" type="text" class="form-control" id="lastName">
+          </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="email">Email:</label>
+              <input formControlName="email" type="text" class="form-control" id="email">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="city">City:</label>
+              <input formControlName="city" type="text" class="form-control" id="city">
+            </div>
+          </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="model">Model:</label>
+              <input formControlName="model" type="text" class="form-control" id="model">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="days">Days:</label>
+              <input formControlName="days" type="date" class="form-control" id="days">
+            </div>
+          </div>
+      
+        <button type="submit" class="btn btn-primary">Confirm</button>
+    </form>
+</div>
+
+<!-- customer = new FormGroup({
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
+    email:new FormControl(''),
+    city: new FormControl(''),
+    model: new FormControl(''),
+    days: new FormControl('')  -->
