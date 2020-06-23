@@ -1,0 +1,13 @@
+
+<div class="container d-flex flex-column justify-content-center">
+    <div class="row">
+        <div class="col-4 cars" *ngFor="let car of cars">
+            <img src="assets/img/{{car.img}}" alt="" width="300px" height="220px">
+            <p class="">Brand: {{car.brand}}</p>
+            <p>Type: {{car.type}}</p>
+            <p>Color: {{car.color}}</p>
+            <p>Motor: {{car.motor}}</p>
+            <p>KM: {{car.km}}</p>
+        </div>
+    </div>
+</div>
