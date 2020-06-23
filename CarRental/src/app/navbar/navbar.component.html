@@ -1,0 +1,27 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item d-flex">
+            <button (click)="countClick()" class="btn btn-success">Donate 10€</button>
+            <div class="d-flex justify-content-between" [style.color]="clickCounter >= 200 ? 'rot' : 'black'">
+            <p class="pl-4 h-2 ">{{ clickCounter}}</p>
+            <ng-template [ngIf]="clickCounter >= 200" >
+                <p>VIP</p>
+        </ng-template>
+    </div>
+        </li>
+      </ul>
+    </div>
+   </nav>
